@@ -1,0 +1,41 @@
+#h1title {
+    color: rgb(91, 147, 184);
+    font-size: 200%;
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+    ;
+}
+
+h4 {
+    color: rgb(91, 147, 184);
+}
+
+#em1 {
+    color: black;
+}
+
+em {
+    color: yellow;
+}
+
+body {
+    background-color: rgb(170, 170, 170);
+}
+
+#happygif {
+    width: 20vw;
+    height: 20vw;
+    margin-right: 20px;
+}
+
+#sadgif {
+    width: 20vw;
+    height: 20vw;
+}
+
+#mymovies {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.linksmovies {
+    color: blue;
+}
