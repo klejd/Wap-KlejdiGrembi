@@ -22,3 +22,11 @@ body {
 a {
     color: #A4A400;
 }
+
+.comments {
+    background-color: #FFFFA8;
+}
+
+li {
+    list-style-image: url('assets/pie_icon.gif');
+}
