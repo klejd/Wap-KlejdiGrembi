@@ -39,3 +39,47 @@ body {
 .linksmovies {
     color: blue;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p:first-letter {
+    font-size: 150%;
+}
+
+
+/*kjo eshte per nested list duke perdorur hover */
+
+li ol {
+    display: none;
+}
+
+li:hover ol {
+    display: none;
+}
+
+li:hover ol {
+    display: block;
+}
+
+ol ol {
+    list-style-type: none;
+}
+
+.stl {
+    color: yellow;
+}
+
+ol ol {
+    color: black;
+}
+
+#reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
