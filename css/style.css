@@ -51,8 +51,6 @@ a:hover {
 p:first-letter {
     font-size: 150%;
 }
-
-
 /*kjo eshte per nested list duke perdorur hover */
 
 li ol {
