@@ -1,0 +1,39 @@
+.date {
+    border: 0.2vw solid #FF847C;
+    border-radius: 50%;
+    width: 20vw;
+    height: auto;
+    font-size: 2vw;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #FF847C;
+    color: white;
+    margin-top: 5vw;
+}
+
+.time {
+    border: 0.2vw solid #FF847C;
+    width: 20vw;
+    height: auto;
+    text-align: center;
+    font-size: 2vw;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #FF847C;
+    color: white;
+    margin-top: 10vw
+}
+
+;
+#postion {}
+
+h1 {
+    text-align: center;
+    color: rgb(53, 109, 158);
+}
+
+body {
+    background-image: url("1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

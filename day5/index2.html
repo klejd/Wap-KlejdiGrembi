@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js2.js"></script>
     <title>Document</title>
 </head>
 
@@ -26,42 +27,45 @@
     <br>
     <br>
     <h1>New Product Form</h1>
-    <div id="left">
-        <label>Product Number</label><br>
-        <input type="text"><br>
-        <br>
-        <label>Name</label><br>
-        <input type="text"><br>
-        <br>
-        <label>Unit Price</label><br>
-        <input type="text">
-    </div>
-    <div id="right">
-        <label>Quantity in stock</label><br>
-        <input type="text" placeholder="0"><br>
-        <br>
-        <label>Supplier</label><br>
-        <select>
-            <option value="select a supplier">Select a supplier</option>
+    <form id="new" action="#" method="GET">
+        <div id="left">
+            <label>Product Number</label><br>
+            <input id="pname" type="text"><br>
+            <br>
+            <label>Name</label><br>
+            <input id="name" type="text"><br>
+            <br>
+            <label>Unit Price</label><br>
+            <input id="unitprice" type="text">
+        </div>
+        <div id="right">
+            <label>Quantity in stock</label><br>
+            <input id="supp" type="text" placeholder="0"><br>
+            <br>
+            <label>Supplier</label><br>
+            <select id="sel">
+            <option class="op" value="select a supplier">Select a supplier</option>
+            <option class="op" value="item 1">item1</option>
+            <option class="op" value="item2">item2</option>
         </select>
-        <br>
-        <br>
-        <label>Date supplied</label><br>
-        <input type="text" placeholder="yyyy-mm-dd"><br>
-        <span id="errormsg">Enter a valid Date.</span>
-        <br>
+            <br>
+            <br>
+            <label>Date supplied</label><br>
+            <input id="date" type="text" placeholder="yyyy-mm-dd"><br>
+            <span id="errormsg">Enter a valid Date.</span>
+            <br>
 
 
-    </div>
+        </div>
 
-    <div id="rightbtn">
-        <form action="index2.html">
+        <div id="rightbtn">
+
             <input id="reset" type="reset" value="Reset">
             <input id="cancel" type="button" value="Cancel">
-            <input id="add" type="submit" value="Add Product">
-        </form>
-    </div>
+            <input id="add" onclick="add1()" type="submit" value="Add Product">
 
+        </div>
+    </form>
 
 
 </body>
