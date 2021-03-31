@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="head">
+        <h1 id="text">CS472:::Minibanking App</h1>
+        <a href=""> <img id="img1" src="1.png" alt="this is a menu"></a>
+    </nav>
+    <div id="header2">
+        <h1>Bank Account Form</h1>
+
+    </div>
+    <form action="#" method="GET" onsubmit="CreateNewAccount()">
+        <label for="accno">Account No</label><br>
+        <input id="Accno" pattern="[0-1]{2}-[0-9]{3}-[0-9]{4}" type="text" placeholder="01-xxx-xxxx" required><br>
+        <em id="emm">Your account number</em><br>
+
+        <label>Customer Name</label><br>
+        <input id="Cname" type="text" placeholder="e.g John B.smith" required>
+        <br><br>
+        <label>Type of Account</label><br>
+        <select id="opt" required>
+            <option value="Checking">Checking</option>
+            <option value="Saving">Saving</option>
+            <option value="Loan">Loan</option>
+        </select>
+        <br><br>
+        <input id="btn" type="submit" value="Create New Account">
+        <br>
+        <br>
+        <table id="display">
+            <tr>
+                <th>List of Customer Accounts</th>
+            </tr>
+            <tr>
+                <td>
+                    01-980-0001|James H. Karvill |Checking
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    01-980-0002|Anna Hernadez-Diaz|Checking
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    01-980-0002|Anna Hernadez-Diaz|Checking
+                </td>
+            </tr>
+        </table>
+
+        <footer id="footer">
+            <p>CS472:Bank:::WAP</p>
+        </footer>
+    </form>
+</body>
+
+</html>

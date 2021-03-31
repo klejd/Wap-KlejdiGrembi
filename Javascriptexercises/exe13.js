@@ -3,9 +3,9 @@ function fib(n, a, b) {
     // var b = 3;
     let s = 0;
     let temp = [];
-    if (a == 0, b == 1)
 
-        temp = [0, 1];
+
+    temp = [a, b];
 
     for (let i = 2; i < n; i++) {
         s = a + b;
