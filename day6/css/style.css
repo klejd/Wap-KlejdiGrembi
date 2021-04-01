@@ -9,3 +9,20 @@
     padding: 20px;
     width: 30vw;
 }
+
+#txter {
+    font-size: 14pt;
+}
+
+#headtxt {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+legend {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#txter {
+    text-align: right;
+    text-decoration: underline;
+}

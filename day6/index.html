@@ -3,7 +3,7 @@
 
 <head>
     <title>Text Decorator</title>
-    <link href="decoratemytext.css" type="text/css" rel="stylesheet" />
+
 
     <!--
 		This is a widely-used JavaScript library named jQuery that has
@@ -18,24 +18,24 @@
 </head>
 
 <body>
-    <h1>Text Decorator</h1>
+    <h1 id="headtxt">Text Decorator</h1>
 
     <div>
         <img src="assets/1.jpg" alt="very decorated!" />
     </div>
     <div id="bord">
         <fieldset id="field">
-            <legend>Text</legend>
-            <textarea name="text" id="txt" cols="30" rows="4"></textarea>
+            <legend id="legendtxt">Text</legend>
+            <textarea name="text" id="txter" cols="30" rows="4">a</textarea>
         </fieldset>
 
     </div>
     <div>
         <fieldset id="bord1">
             <legend>Decoration</legend>
-            <button>Bigger Decorations</button>
+            <button id="biggerDecoration">Bigger Decorations</button>
             <br>
-            <input type="checkbox" name="check" id="chck" value="Bling">
+            <input type="checkbox" name="check" id="blingCheckbox" value="Bling">
             <label for="check">Bling</label>
 
         </fieldset>
