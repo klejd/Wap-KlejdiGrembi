@@ -1,4 +1,5 @@
 window.onload = function() {
+    "use strict";
     var buttonClicked = document.getElementById("biggerDecoration");
     buttonClicked.onclick = setTimer;
     var checkboxChecked = document.getElementById("blingCheckbox");
