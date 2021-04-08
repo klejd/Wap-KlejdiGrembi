@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/js2.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="ul">
+            <h1 id="headh1">MUM Golden Market:::SRM System</h1>
+            <a class="linkp" href=""> Products</a>
+            <a class="links" href=""> Suppliers</a>
+            <p class="prg">Hello!</p>
+            <form action="index.html">
+                <button id="btn">Sign Out</button>
+            </form>
+            <div id="line"></div>
+            <div id="line2"></div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <h1>New Product Form</h1>
+    <form id="new" action="#" method="GET">
+        <div id="left">
+            <label>Product Number</label><br>
+            <input id="pname" type="text" required><br>
+            <br>
+            <label>Name</label><br>
+            <input id="name" type="text" required><br>
+            <br>
+            <label>Unit Price</label><br>
+            <input id="unitprice" type="text" required>
+        </div>
+        <div id="right">
+            <label>Quantity in stock</label><br>
+            <input id="supp" type="text" placeholder="0" required><br>
+            <br>
+            <label>Supplier</label><br>
+            <select id="sel" required>
+            <option class="op" value="select a supplier">Select a supplier</option>
+            <option class="op" value="item 1">item1</option>
+            <option class="op" value="item2">item2</option>
+        </select>
+            <br>
+            <br>
+            <label>Date supplied</label><br>
+            <input id="date" type="text" placeholder="yyyy-mm-dd" required><br>
+            <span id="errormsg">Enter a valid Date.</span>
+            <br>
+
+
+        </div>
+
+        <div id="rightbtn">
+
+            <input id="reset" type="reset" value="Reset">
+            <input id="cancel" type="button" value="Cancel">
+            <input id="add" onclick="add1()" type="submit" value="Add Product">
+
+        </div>
+        <br>
+
+    </form>
+
+    <div id="out">output is here</div>
+</body>
+
+</html>

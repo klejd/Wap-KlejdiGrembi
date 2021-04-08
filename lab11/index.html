@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/js1.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form" method="GET" action="#" accept-charset="utf-8" onsubmit="print2()">
+        <label id="emaill">Email address</label><br>
+        <input type="email" id="username" placeholder="Enter email" required><br>
+        <em>We'll never share your email with anyone else</em>
+        <br>
+        <label>Password</label><br>
+        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" id="password" placeholder="Password" required><br>
+        <br>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Check me out</label><br><br>
+        <button id="btn" type="submit">Submit</button>
+    </form>
+    </br>
+    <form id="new" action="#" onsubmit="print1()" method="GET">
+
+        <label for="website">Enter an https:// URL:</label>
+
+        <input type="url" name="website1" id="website" pattern="https://.*" size="30" required>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
