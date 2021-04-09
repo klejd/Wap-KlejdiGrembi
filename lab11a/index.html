@@ -14,89 +14,94 @@
 <body>
     <nav class="navbar navbar-light bg-light justify-content-between">
         <a class="navbar-brand">CS472:::MiniBankingApp</a>
-        <form class="form-inline">
+        <div class="form-inline">
 
             <p class=" my-2 my-sm-0">Welcome</p>
-        </form>
+        </div>
     </nav>
-    <div class="container">
-        <div class="header">
-            <h2 style=" color:black">Bank Account Form</h2>
-            <div class="form-group">
+    <form action="#" method="GET" onsubmit="sbmt()">
+        <div class="container">
+            <div class="header">
+                <h2 style=" color:black">Bank Account Form</h2>
+                <div class="form-group">
 
-                <label>Account No</label><br>
-                <input id="acc" class="form-control" type="text"><br>
-                <label>Customer Name</label><br>
-                <input id="cname" class="form-control" type="text"><br>
-                <label>Type of Account</label><br>
-                <select class="form-control" id="opt">
+                    <label>Account No</label><br>
+                    <input pattern="[0-1]{2}-[0-9]{3}-[0-9]{4}" id="acc" class="form-control" type="text" required><br>
+                    <label>Customer Name</label><br>
+                    <input id="cname" class="form-control" type="text" required><br>
+                    <label>Type of Account</label><br>
+                    <select class="form-control" id="opt" required>
                     <option value="">Select Accounts</option>
                     <option value="Checking">Checking</option>
                     <option value="Saving">Saving</option>
                     <option value="Loan">Loan</option>
                 </select>
-                <br>
-                <button id="create" type="submit" class="btn btn-primary">Create New Account</button>
-                <br>
-                <br>
-                <div class="row">
-                    <span class="form-check-inline">Show only Saving Accounts</span>
-                    <input type="checkbox" class="form-check-input" id="chck">
-                </div>
-                <div class="row">
-                    <span class="form-check-inline">Show only Checking Accounts</span>
-                    <input type="checkbox" class="form-check-input" id="chck1">
-                </div>
-                <div class="row">
-                    <span class="form-check-inline">Show only Loan Accounts</span>
-                    <input type="checkbox" class="form-check-input" id="chck2">
+                    <em id="errormsg"></em>
+                    <br>
+                    <button id="create" type="submit" class="btn btn-primary">Create New Account</button>
+                    <br>
+                    <br>
+
+                    <div class="row">
+                        <span class="form-check-inline">Show only Saving Accounts</span>
+                        <input type="checkbox" class="form-check-input" id="chck">
+                    </div>
+                    <div class="row">
+                        <span class="form-check-inline">Show only Checking Accounts</span>
+                        <input type="checkbox" class="form-check-input" id="chck1">
+                    </div>
+                    <div class="row">
+                        <span class="form-check-inline">Show only Loan Accounts</span>
+                        <input type="checkbox" class="form-check-input" id="chck2">
+                    </div>
+
                 </div>
 
             </div>
-
         </div>
-    </div>
 
 
 
 
-    <div style="margin-bottom: 5vw;" class="container">
-        <div class="row">
+        <div style="margin-bottom: 5vw;" class="container">
+            <div class="row">
 
 
-            <table id="display" class="table table-striped">
-                <thead class="thead-light">
-                    <tr>
-                        <th style="color: white; background-color: cornflowerblue;">List Of Costumers</th>
-                        <th style="background-color: cornflowerblue;"></th>
-                        <th style="background-color: cornflowerblue;"></th>
-                        <th style="background-color: cornflowerblue;"></th>
-                    </tr>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Account No</th>
-                        <th scope="col">Costumer Name</th>
-                        <th scope="col">Type of Account</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>01-980-0001</td>
-                        <td>James H. kARVILL</td>
-                        <td class="ishide">Checking</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>01-980-0002</td>
-                        <td>Anna Hernandez-Diaz</td>
-                        <td class="ishide">Saving</td>
-                    </tr>
+                <table id="display" class="table table-striped">
+                    <thead class="thead-light">
+                        <tr>
+                            <th style="color: white; background-color: cornflowerblue;">List Of Costumers</th>
+                            <th style="background-color: cornflowerblue;"></th>
+                            <th style="background-color: cornflowerblue;"></th>
+                            <th style="background-color: cornflowerblue;"></th>
+                        </tr>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Account No</th>
+                            <th scope="col">Costumer Name</th>
+                            <th scope="col">Type of Account</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>01-980-0001</td>
+                            <td>James H. kARVILL</td>
+                            <td class="ishide">Checking</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>01-980-0002</td>
+                            <td>Anna Hernandez-Diaz</td>
+                            <td class="ishide">Saving</td>
+                        </tr>
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+
+            </div>
         </div>
-    </div>
+    </form>
     <footer class="fixed-bottom bg-light text-center text-lg-start">
 
         <div class="text-left p-3" style="background-color: rgba(0, 0, 0, 0.2);">
